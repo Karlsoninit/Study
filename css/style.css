@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    padding: 100px 0 0 0;
+}
+
+
+.container {
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    
+}
+
+
+
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    transition: all 200ms linear;
+    /* position: absolute; */
+    background-image: url(https://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/legos-hero.png?itok=IoQWZoR7&resize=1100x1100);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container:hover .box {
+    background-color: green;
+    transform: translate(-30px, -30px);
+    transition: all 200ms linear;
+    box-shadow: 30px 30px blue;
+    
+}
+
+.inner {
+    width: 80%;
+    height: 100px;
+    background-color: green;
+    display: none;
+}
+
+.container:hover .box {
+    display: flex;
+    background: linear-gradient(rgba(24, 123, 100,0.5),rgba(134, 23, 100,0.5)), url(https://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/legos-hero.png?itok=IoQWZoR7&resize=1100x1100);
+    background-size: cover;
+}
+
+.container:hover .inner {
+    display: flex;
+    
+}
+
+.inner:hover {
+    background-color: #fff;
+    opacity: 0.5;
+}
